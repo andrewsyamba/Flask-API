@@ -1,11 +1,14 @@
----
 services:
   - type: web
     name: quote-api
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
     envVars:
       - key: FLASK_ENV
         value: production
+      - key: MAIL_USERNAME
+        value: apikey1992@gmail.com
+      - key: MAIL_PASSWORD
+        value: lrqd nbow zxpg lksn
