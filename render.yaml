@@ -6,4 +6,5 @@ services:
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn app:app"
     envVars:
-      - fromGroup: QuoteAPIConfig
+      - key: FLASK_ENV
+        value: production
