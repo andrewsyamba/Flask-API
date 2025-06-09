@@ -1,6 +1,5 @@
 Flask
-Flask-Mail
 Flask-SQLAlchemy
-Werkzeug
+Flask-Mail
 gunicorn
-schedule
+requests
